@@ -4,10 +4,11 @@ import { InputForm } from '../components/InputForm';
 
 
 
+
 const Login = () => {
   return (
 
-<div class="flex items-center justify-center">
+<div class="flex items-center justify-center pt-8">
         <div class="w-full max-w-md mt-20 mb-20">
           <form class="bg-white shadow-lg rounded px-12 pt-6 pb-8 mb-4">
             <div
@@ -17,7 +18,7 @@ const Login = () => {
             </div>
 
             <InputForm text={'Nama Lengkap'}
-                name="nama_lengkap"
+                name="name"
                 required
                 autofocus
                 placeholder="Nama Lengkap" />
@@ -40,7 +41,7 @@ const Login = () => {
 
 
             <InputForm text={'Phone'}
-                name="phone"
+                name="phone_number"
                 required
                 autofocus
                 placeholder="Phone" />
@@ -57,7 +58,7 @@ const Login = () => {
              <div class="mb-6">
              <InputForm text={'Re-Type Password'}    
                 v-model="form.password"
-                type="password"
+                type="conf_password"
                 placeholder="Re-Type Password"
                 name="password2"
                 required
@@ -65,12 +66,12 @@ const Login = () => {
            </div>
 
             <div class="flex items-center justify-between">
-              <button class="px-4 py-2 rounded text-white inline-block shadow-lg bg-blue-500 hover:bg-blue-600 focus:bg-blue-700" type="submit">Register</button>
+            <button class="px-4 py-2 rounded text-white inline-block shadow-lg bg-blue-500 hover:bg-blue-600 focus:bg-blue-700" type="submit">Register</button>
             </div>
             <div class="mt-6">
               Already Have an Account ? <a
                 class="inline-block align-baseline font-normal text-blue-500 hover:text-blue-800"
-                href="#"
+                href="/login"
               >
                 Login Here
               </a>

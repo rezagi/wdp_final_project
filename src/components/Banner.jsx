@@ -1,5 +1,5 @@
 import React from 'react'
-import {BannerPict, HeaderPict} from "../assets"
+import {BannerPict} from "../assets"
 
 const Banner = () => {
   return (

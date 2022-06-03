@@ -7,7 +7,7 @@ import { InputForm } from '../components/InputForm';
 const Login = () => {
   return (
 
-<div class="flex items-center justify-center">
+<div class="flex items-center justify-center pt-8">
         <div class="w-full max-w-md mt-20 mb-20">
           <form class="bg-white shadow-lg rounded px-12 pt-6 pb-8 mb-4">
             {/* <div

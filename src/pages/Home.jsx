@@ -1,19 +1,22 @@
 import React from 'react'
 import Banner from '../components/Banner'
-import NavBar from '../components/NavBar'
+import ButtonNav from '../components/ButtonNav'
 import TextParagraph from '../components/TextParagraph'
 import {LayoutPict, PartnerPict, LogoAeg, LogoPk, LogoSr,Thumbnail1,Thumbnail2} from "../assets"
 import TextRed from '../components/TextRed'
+import { Link } from 'react-router-dom'
+
 
 const Home = () => {
   return (
 <>
-      <NavBar />
       <Banner />
+
       <div class="bg-white w-full h-screen">
           <div class='container flex mx-auto item-center px-6'>
+          <div class="py-8 border-l-0 border-b-2 border-black  border-t-0 border-t-0 mt-4 pt-4 mt-0">
               <div id="news">
-              <h1 class="text-center text-2xl font-bold font-serif my-10"> NEWS </h1>
+              <h1 class="text-center text-3xl font-bold font-serif my-10"> NEWS </h1>
               <TextParagraph text={'Jakarta, Indonesia (March 29, 2022) - Justin Bieber announced new dates for his much-anticipated Justice World Tour, including Jakarta on November 2nd and 3rd, 2022 at Stadion Madya, Gelora Bung Karno. Kicking off on October 22nd, Bieber will hit Kuala Lumpur, Jakarta, Nagoya, Osaka and Tokyo. The entire world tour spans more than 100 dates throughout 2022 and 2023 in North America, South America, Europe, the UK, Australia, New Zealand, South Africa, Asia and the Middle East, with more shows to be announced in Asia very soon.'}/>
               <TextParagraph text={'AEG Presents Asia, PK Entertainment and Sound Rhythm are thrilled to announce that due to overwhelming demand, tickets for Justin Bieber’s much-anticipated Justice World Tour in Jakarta this November 3rd, 2022 have sold out. To keep up with fans demand, PK Entertainment is pleased to announce an additional date in Jakarta on Wednesday, November 2nd, 2022. Tickets will go on sale at 10.00 a.m. (GMT+7) on April 2, 2022 exclusively at www.justinbieberinjakarta.com and Blibli. Ticket purchases can only be made using BCA credit/debit cards, or by transfer to BCA virtual account.'}/>
               <TextParagraph text={'The new dates come on the heels of his recently announced international shows, starting in May 2022 in Mexico and will then continue on to Scandinavia for festival shows in August; South America, South Africa and the Middle East in September & October, and then over to Asia, Australia and New Zealand in October, November & December before moving to the UK and Europe in early 2023. Each evening promises to be a celebration for both Justin and his fans, who have been looking forward to these new shows since the pandemic sidelined the previously announced 2020 dates.'} />
@@ -24,33 +27,37 @@ const Home = () => {
               <TextParagraph text={"‘Justice' has amassed nearly 9 billion streams worldwide, arriving on the back of huge international hits ‘Anyone’, ‘Lonely’ and ‘Holy’, which had already gathered 2 billion streams prior to the album’s release. Another breakout smash hit from the album immediately followed, with ‘Peaches’ racking up over 2.5 billion streams so far. The Kid LAROI duet ‘Stay’, was released in July this year and became the fastest song ever to hit 1 billion streams on Spotify."}/>
               <TextParagraph text={'In an unprecedented career that started when he was 13 years old, Bieber has released 6 studio albums and holds 32 Guinness World Records, 21 Billboard Music Awards, 2 BRIT Awards, 18 American Music Awards and 21 MTV Europe Music Awards. He has sold over 80 million albums and last year broke Elvis Presley’s record as the youngest solo artist to have 8 albums reach Number 1 on the Billboard 200 charts. In August, he broke the all-time record for monthly listeners on Spotify with over 83 million.'}/>
               <TextParagraph text={'Recently named Artist Of The Year at the MTV Video Music Awards and nominated for a field-leading 8 MTV EMA Awards, Bieber remains the Number 1 artist on both YouTube and Spotify worldwide, cementing his place as one of the biggest pop stars of the 21st century.'}/>
-              </div> 
+              </div> </div>
           </div>
 
-      <h1 class="text-center text-2xl font-bold font-serif my-5">Video</h1>
 
-      <div class="container px-10 py-16 mx-auto">
+    <div class="container mx-auto">
+    <div class="py-8 border-l-0 border-b-2 border-black  border-t-0 border-t-0 mt-4 pt-2 mt-0">
+    <h1 class="text-center text-3xl font-bold font-serif my-5">Video</h1>
     <div class="flex flex-wrap -mx-4 -mb-10 text-center">
       <div class="sm:w-1/2 mb-10 px-4">
         <div class="rounded-lg h-64 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full w-full" src={Thumbnail1} />
+        <a href="https://www.youtube.com/watch?v=Fp8msa5uYsc" target="_blank" rel="noreferrer">
+          <img alt="content" class="object-cover object-center h-full w-full" src={Thumbnail1} /></a>
         </div>
       </div>
       <div class="sm:w-1/2 mb-10 px-4">
         <div class="rounded-lg h-64 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full w-full" src={Thumbnail2}/>
+        <a href="https://www.youtube.com/watch?v=tQ0yjYUFKAE" target="_blank" rel="noreferrer">
+          <img alt="content" class="object-cover object-center h-full w-full" src={Thumbnail2}/></a>
         </div>
     </div>
-    </div>
+    </div></div>
   </div>
  
 
 
       <div class='container flex mx-auto item-center px-6'>
+      <div class="py-8 border-l-0 border-b-2 border-black  border-t-0 border-t-0 mt-4 pt-2 mt-0">
       <div id="tnc">
-            <h1 class="text-center text-2xl font-bold font-serif my-5"> Term & Condition </h1>
-            <h2 class="font-bold font-serif"> General Terms & Conditions  </h2>
-            <h2 class="font-bold font-serif"> Syarat & Ketentuan Umum  </h2>
+            <h1 class="text-center text-3xl font-bold font-serif my-5"> Term & Condition </h1>
+            <h2 class="font-bold text-xl font-serif"> General Terms & Conditions  </h2>
+            <h2 class="font-bold text-xl font-serif"> Syarat & Ketentuan Umum  </h2>
             <ol class="list-decimal">
               <li>Tickets can only be purchased through justinbieberinjakarta.com and Blibli. Tickets are only for admission to the Justin Bieber Justice World Tour 2022 Jakarta concert. Tickets purchased for the November 2nd, 2022 show show can only be used on November 2nd, 2022 and tickets purchased for the November 3rd, 2022 show can only be used on November 3rd, 2022. </li>
               <TextRed text={'Tiket hanya dijual melalui justinbieberinjakarta.com dan Blibli. Tiket dapat digunakan untuk masuk ke acara konser Justin Bieber Justice World Tour 2022 Jakarta. Tiket yang dibeli untuk tanggal 2 November 2022 hanya berlaku pada tanggal 2 November 2022 dan tiket yang dibeli untuk tanggal 3 November 2022 hanya berlaku pada tanggal 3 November 2022'}/>
@@ -100,16 +107,16 @@ const Home = () => {
               <li>By purchasing tickets to the Justin Bieber Justice World Tour 2022 Jakarta, you have agreed to the applicable Terms and Conditions. </li>
               <TextRed text={'Dengan membeli tiket untuk Justin Bieber Justice World Tour 2022 Jakarta, Anda telah menyetujui semua Syarat dan Ketentuan yang berlaku.'}/>
             </ol>
-          <h2 class="font-bold font-serif mt-5"> COVID-19 Terms & Conditions   </h2>
-          <h2 class="font-bold font-serif">Syarat & Ketentuan Protokol COVID-19 </h2>
+          <h2 class="font-bold text-xl font-serif mt-5"> COVID-19 Terms & Conditions   </h2>
+          <h2 class="font-bold text-xl font-serif">Syarat & Ketentuan Protokol COVID-19 </h2>
           <ol class="list-decimal">
             <li>The organizer/ promoter is monitoring local COVID-19 trends and will meet or exceed protocols mandated by local governments. By purchasing tickets to this event, you agree to the terms & conditions of this event and abide by the health & safety measures in effect at the time of the event, which may include, but not be limited to, wearing masks, providing proof of vaccination status and/or providing proof of negative COVID-19 test. Guidelines may change without prior notice. </li>
             <TextRed text={'Penyelenggara acara akan memantau tren COVID-19 dan akan memenuhi atau melampaui protokol yang diterapkan oleh pemerintah. Dengan membeli tiket untuk acara ini, Anda menyetujui syarat & ketentuan acara ini dan mematuhi langkah-langkah kesehatan & keselamatan yang berlaku pada saat acara, yang mungkin termasuk, namun tidak terbatas pada, mengenakan masker, memberikan bukti status vaksinasi dan/atau memberikan bukti tes COVID-19 yang negatif. Pedoman dapat berubah tanpa pemberitahuan sebelumnya.'}/>
             <li>Please note that mandate and protocols, including COVID-19 vaccination requirements may vary and are subject to change. Please make sure to check the latest information before coming to the event. The organizer/ promoter takes those measures against the transmission of COVID-19 so that all visitors can enjoy the show without anxiety. Thank you for your understanding and cooperation.</li>
             <TextRed text={'Harap dicatat bahwa peraturan dan protokol, termasuk persyaratan vaksinasi COVID-19 dapat bervariasi dan berubah. Pastikan untuk memeriksa informasi terbaru sebelum datang ke acara. Penyelenggara acara mengambil langkah-langkah pencegahan penularan COVID-19 agar semua pengunjung dapat menikmati pertunjukan tanpa rasa cemas. Terima kasih atas perhatian dan kerjasamanya.'}/>
           </ol>
-          <h2 class="font-bold font-serif mt-5"> VIP Package Terms & Conditions </h2>
-          <h2 class="font-bold font-serif">Syarat & Ketentuan VIP Package  </h2>
+          <h2 class="font-bold text-xl font-serif mt-5"> VIP Package Terms & Conditions </h2>
+          <h2 class="font-bold text-xl font-serif">Syarat & Ketentuan VIP Package  </h2>
           <ol class="list-decimal">
             <li>Reselling of VIP packages is strictly prohibited. All package components will be revoked if resold. </li>
             <TextRed text={'Dilarang keras untuk menjual kembali paket VIP. Semua komponen paket akan dicabut jika dijual kembali.'}/>
@@ -123,23 +130,25 @@ const Home = () => {
             <TextRed text={'VIP hanyalah sebuah julukan. Gelar VIP tidak dapat memberikan izin atau akses ke lokasi acara atau area belakang panggung.'}/>
           </ol>
       </div>
-      <hr></hr>
+      </div>
       </div>
 
       <div class='container flex mx-auto item-center px-6'>
+      <div class="py-8 border-l-0 border-b-2 border-black  border-t-0 border-t-0 mt-4 pt-2 mt-0">
       <div id="layout">
-              <h1 class="text-center text-2xl font-bold font-serif pt-10 mt-20"> Layout </h1>
-              <div class="container mx-auto">
+              <h1 class="text-center text-3xl font-bold font-serif pt-10 mt-20"> Layout </h1>
+              <div class="container mx-auto flex items-center justify-center flex-col">
                 <img src={LayoutPict} alt="Layout Concert"/>
-                <button class="flex mx-auto text-white bg-green-500 border-0 py-2 px-5 focus:outline-none hover:bg-green-600 rounded">Buy Ticket</button>
+                <Link to="/login"><ButtonNav text={'Buy Ticket'} /></Link>
               </div>
       </div>
-      <hr></hr>
+      </div>
       </div>
 
       <div class='container flex mx-auto item-center px-6'>
+      <div class="py-8 border-l-0 border-b-2 border-black  border-t-0 border-t-0 mt-4 pt-2 mt-0">
       <div id="promoter">
-              <h1 class="text-center text-2xl font-bold font-serif pt-10 mt-20"> Promoters </h1>
+              <h1 class="text-center text-3xl font-bold font-serif pt-10 mt-20"> Promoters </h1>
               <div class="container mx-auto">
                 <img class="w-40 h-20 mb-10" src={LogoAeg} alt="Logo AEG"/>
                 <TextParagraph text={"Combining the power of the live event with a focus on true artist development, AEG Presents is a world leader in the music and entertainment industries. "}/>
@@ -155,17 +164,20 @@ const Home = () => {
                 <TextParagraph text={"For more information about Sound Rhythm, please visit: http://SoundRhythm.id, Instagram & twitter @SoundRhythm"}/>
               </div>
       </div>
-      <hr></hr>
       </div>
-
+      </div>
+    
       <div id="sponsor">
-              <h1 class="text-center text-2xl font-bold font-serif my-10 px-6"> Sponsor </h1>
+              <h1 class="text-center text-3xl font-bold font-serif my-10 px-6"> Sponsor </h1>
               <div class="container mx-auto">
+              <div class="py-8 border-l-0 border-b-2 border-black  border-t-0 border-t-0 mt-4 pt-2 mt-0">
                 <img src={PartnerPict} alt="Layout Concert"/>
               </div>
       </div>
+      </div>
+
       <div id="contact" class="px-6">
-      <h1 class="text-center text-2xl font-bold font-serif my-10 "> Customer Service Info </h1>
+      <h1 class="text-center text-3xl font-bold font-serif my-10 "> Customer Service Info </h1>
         <div class="container mx-auto">
             <TextParagraph text={"For more information about ticket purchase, wheelchair accessible seating and international purchase, please contact: "}/>
             <p class="font-bold mb-4">Loket.com</p>
