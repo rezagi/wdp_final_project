@@ -29,7 +29,7 @@ const ticketSchema = new Schema({
     },
   order_date: {
     type: Date,
-    required: [true, "Order Date WAJIB di isi !"],
+    required: [true, "Tanggal Order WAJIB di isi !"],
     },
   confirmation_date: {
     type: Date

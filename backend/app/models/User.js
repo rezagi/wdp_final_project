@@ -23,7 +23,7 @@ const userSchema = Schema({
     },
     conf_password: {
         type: String,
-        required: [true, "Konfirmasi Password wajib di isi !"]
+        required: [true, "Konfirmasi Password wajib di isi & Sesuai !"]
     },    
     refresh_token: {
         type: String
